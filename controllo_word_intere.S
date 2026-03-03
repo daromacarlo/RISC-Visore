@@ -1,3 +1,5 @@
+#include <soc/gpio_reg.h>
+
 .globl controllo_word_intere
 
 .section .data
@@ -8,32 +10,21 @@
 	    sub t2, s0, t0                  # t2 = lunghezza in byte del programma
 	    li t4, 8
 	    rem t3, t2, t4   
-	    beqz t3, ok_len  
+	    beqz t3, ok 
 	
  # se la lunghezza non è multipla di 8
-	    j errore_lunghezza
+	    j errore
 	
         # Segnalazione errore
 
-errore_lunghezza:
-    li a4, 0x60004000           # Base GPIO ESP32-C3
-    li a5, (1 << 8)             # Maschera Pin 8
+errore:
+    jal ra, vuota_registri
+    li a0,2
+    j controller_led
 
-blink_loop:
-    sw a5, 0x0004(a4)           # LED OFF
-    jal ra, delay
-    sw zero, 0x0004(a4)         # LED ON
-    jal ra, delay
-    j blink_loop
 
-        # invece se tutto va bene
+            # se tutto va bene invece:
 
-ok_len:
-    li a0, 0                # valido 
+ok:
+    li a0, 0                # Opcode valido 
     jr ra
-
-delay:
-    li a6, 2500000
-1:  addi a6, a6, -1
-    bnez a6, 1b
-    ret

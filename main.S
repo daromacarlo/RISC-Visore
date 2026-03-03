@@ -96,10 +96,10 @@ main_validator:
 			# Sicuramente c'è un modo più pulito per fare quello che ho fatto quì sopra
 			
 			jal ra, controllo_opcode
-			jal ra, controllo_sintassi
 			jal ra, controllo_memoria
 			jal ra, controllo_registro_zero
 			jal ra, controllo_registri_critici
+			jal ra, controllo_sintassi
 
 			# Controllo di flusso
 			

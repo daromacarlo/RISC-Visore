@@ -1,3 +1,5 @@
+#include <soc/gpio_reg.h>
+
 .section .text
 
 .global controllo_opcode
@@ -21,11 +23,11 @@ controllo_opcode:
     beq s2, s3, ok
     
     # controlliamo se l'operazione è di tipo branch
-    li s2, 99                                                   #opcode 1100011
+    li s2, 99                                                   #opcode 1100111
     beq s2, s3, ok
     
     # controlliamo se l'operazione è di tipo Jump And Link
-    li s2, 111                                                  #opcode 1100111
+    li s2, 111                                                  #opcode 1101111
     beq s2, s3, ok
     
     # controlliamo se l'operazione è di tipo Jump And Link Reg
@@ -44,28 +46,21 @@ controllo_opcode:
     li s2, 115                                                  #opcode 1110011
     beq s2, s3, ok
 
+    # controlliamo se l'operazione è di tipo fenceS
+    li s2, 15                                                   #opcode 0001111
+    beq s2, s3, ok
+
 
             # Segnalazione errore:
 
-errore_lampeggio:
-    li a4, 0x60004000           # Base GPIO ESP32-C3
-    li a5, (1 << 8)             # Maschera Pin 8
+errore:
+    jal ra, vuota_registri
+    li a0,1
+    j controller_led
 
-blink_loop:
-    sw a5, 0x0004(a4)           # LED OFF
-    jal ra, delay
-    sw zero, 0x0004(a4)         # LED ON
-    jal ra, delay
-    j blink_loop
 
             # se tutto va bene invece:
 
 ok:
     li a0, 0                # Opcode valido 
     jr ra
-
-delay:
-    li a6, 2500000
-1:  addi a6, a6, -1
-    bnez a6, 1b
-    ret

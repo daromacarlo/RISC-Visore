@@ -52,24 +52,13 @@ verifica_rd_critico:
         # Segnala errore
 
 errore:
-    li a4, 0x60004000           # Base GPIO ESP32-C3
-    li a5, (1 << 8)             # Maschera Pin 8
+    jal ra, vuota_registri
+    li a0,6
+    j controller_led
 
-blink_loop:
-    sw a5, 0x0004(a4)           # LED OFF
-    jal ra, delay
-    sw zero, 0x0004(a4)         # LED ON
-    jal ra, delay
-    j blink_loop
 
-        # Invece se tutto va bene
+            # se tutto va bene invece:
 
 ok:
-    li a0, 0                # valido 
+    li a0, 0                # Opcode valido 
     jr ra
-
-delay:
-    li a6, 2500000
-1:  addi a6, a6, -1
-    bnez a6, 1b
-    ret

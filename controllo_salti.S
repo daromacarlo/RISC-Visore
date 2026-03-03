@@ -1,3 +1,5 @@
+#include <soc/gpio_reg.h>
+
 .globl controllo_salti
 
 .section .data
@@ -18,7 +20,7 @@ controllo_salti:
     j ok    # se l'operazione non è un salto saltiamo alla prossima (scusate il gioco di parole)
 
 	# LO STESSO CODICE E' OTTENIBILE UTILIZZANDO UNA FLAG,
-	#  QUESTO EVITEREBBE LA RIPETIZIONE DI QUESTA OPERAZIONE
+	# QUESTO EVITEREBBE LA RIPETIZIONE DI QUESTA OPERAZIONE
 	# TUTTAVIA VA A COMPLICARE TROPPO IL MAIN...
 	# PER ORA HO DECISO DI LASCIARLO COSI'
 
@@ -114,22 +116,13 @@ check_range:
     j ok
 
 errore:
-    li a4, 0x60004000           # Base GPIO ESP32-C3
-    li a5, (1 << 8)             # Maschera Pin 8
+    jal ra, vuota_registri  
+    li a0,4
+    j controller_led
 
-blink_loop:
-    sw a5, 0x0004(a4)           # LED OFF
-    jal ra, delay
-    sw zero, 0x0004(a4)         # LED ON
-    jal ra, delay
-    j blink_loop
+
+            # se tutto va bene invece:
 
 ok:
     li a0, 0                # Opcode valido 
     jr ra
-
-delay:
-    li a6, 2500000
-1:  addi a6, a6, -1
-    bnez a6, 1b
-    ret

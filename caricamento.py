@@ -11,7 +11,7 @@ BAUD = 115200
 class SerialApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Invio File a Arduino")
+        self.root.title("Invio File a ESP32c3 super-mini (RISC-Visore)")
         self.root.geometry("400x200")
 
         self.file_path = None

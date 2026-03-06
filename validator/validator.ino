@@ -1,6 +1,6 @@
 extern "C" {
   int main_validator(const char* inizio, const char* fine); 
-  int controllo_dinamico_loop(const char* inizio, const char* fine);
+  /*int controllo_dinamico_loop(const char* inizio, const char* fine);*/
 }
 
 #define MAX_BUFFER_SIZE 1000 
@@ -83,7 +83,7 @@ void loop() {
         Serial.println(inputBuffer + bufferIndex);*/
 
         if (res == 0) {
-          int res2 = controllo_dinamico_loop(inputBuffer, inputBuffer + bufferIndex);
+          /*int res2 = controllo_dinamico_loop(inputBuffer, inputBuffer + bufferIndex);*/
           Serial.println("Controlli statici superati");
           Serial.println("RIAVVIA MANUALMENTE LA SCHEDA.");
           /*
@@ -95,7 +95,7 @@ void loop() {
             Serial.println("Errore dinamico rilevato: Segnalazione su LED 10");
             Serial.println("RIAVVIA MANUALMENTE LA SCHEDA.");
             trasmettiLoopMorse();
-          }*/
+          } */
         } else {
           gestisciBlink(res);
         }

@@ -54,7 +54,17 @@ verifica_rd_critico:
 errore:
     jal ra, vuota_registri
     li a0,6
-    j controller_led
+    lw ra, 44(sp)
+    lw s0, 40(sp)
+    lw s1, 36(sp)
+    lw s2, 32(sp)
+    lw s3, 28(sp)
+    lw s4, 24(sp)
+    lw s9, 20(sp)
+    lw s10, 16(sp)
+    lw s11, 12(sp)
+    addi sp, sp, 48
+    ret
 
 
             # se tutto va bene invece:

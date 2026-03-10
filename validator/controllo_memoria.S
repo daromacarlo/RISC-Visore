@@ -15,7 +15,7 @@ controllo_memoria:
     li t2, 35               
     beq t1, t2, verifica_allineamento
     
-    j ok               # Se non è un'istruzione di memoria, esci 
+    j ok               # Se non è un'istruzione di memoria, esci, codice in teoria non raggiungibile...
 
 verifica_allineamento:
     # Controlliamo se è una Word (funct3 deve essere 2 per LW/SW)
@@ -23,11 +23,6 @@ verifica_allineamento:
     andi t3, t3, 7           # Isoliamo funct3
     li t4, 2                 # Valore 2 = Word
     bne t3, t4, ok           # Se è un byte (0) o half-word (1), l'allineamento a 4 non è richiesto
-
-    # Estraiamo l'immediato per verificare l'allineamento dell'offset
-    # Per LOAD (I-type): immediato è nei bit 20-31
-    # Per STORE (S-type): immediato è diviso, ma i bit 0-1 dell'offset sono comunque nei bit 7-8 dell'istruzione
-    # Per semplicità di convalida statica, controlliamo i bit che determinano l'allineamento a 4 (ultimi 2 bit dell'offset)
     
     andi t1, t6, 127         # Ricarica opcode
     li t2, 3

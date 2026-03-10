@@ -14,7 +14,7 @@ controllo_registri_critici:
     # Cerchiamo le istruzioni che hanno il registro di ritorno con la solita maschera
     andi t1, t6, 0x7F
     
-    # Opcodes che usano rd: 51(R), 19(I), 3(Load), 103(jalr), 55(LUI), 23(AUIPC), 111(JAL)
+    # cerco le istruzioni che potrebbero essere dannose
     li t2, 51
     beq t1, t2, verifica_rd_critico
     li t2, 19
@@ -37,10 +37,8 @@ verifica_rd_critico:
     srli t1, t6, 7
     andi t1, t1, 0x1F
     
-    # Controllo se rd è uno dei registri riservati (x2, x3, x4)
-    li t2, 2                # x2 = sp 
-    beq t1, t2, errore
-    
+    # Controllo se rd è uno dei registri su cui non bisogna scrivere (x3, x4)
+
     li t2, 3                # x3 = gp 
     beq t1, t2, errore
     

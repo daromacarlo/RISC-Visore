@@ -1,9 +1,9 @@
 #include <soc/gpio_reg.h>
 
 .section .text
-.global main_validator
+.global controlli_statici
 
-main_validator:
+controlli_statici:
     addi sp, sp, -48        
     sw ra, 44(sp)           
     sw s0, 40(sp)           

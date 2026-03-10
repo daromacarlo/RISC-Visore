@@ -1,5 +1,7 @@
 #include <soc/gpio_reg.h>
 
+#in questa sezioni ci sono delle opeazioni in realtà inutili, le eliminerò in seguito
+
 .globl controllo_sintassi
 
 .section .data

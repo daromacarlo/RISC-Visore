@@ -44,7 +44,7 @@ ciclo_simulazione:
       sw zero, 0(a5)
       li s1, 15
       addi s4, s4, 1
-      bgt s2, s3, ok			            	
+      bge s2, s3, ok			            	
       bgt s4, s5, errore_loop_infinito
 
       lbu t1, (s2)

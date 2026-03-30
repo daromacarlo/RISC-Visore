@@ -106,9 +106,9 @@ void loop() {
               pinMode(res3.led_pin, OUTPUT); 
               
               // Accendiamo il led y per x tempo
-              digitalWrite(res3.led_pin, HIGH);
-              delay(res3.tempo);
               digitalWrite(res3.led_pin, LOW);
+              delay(res3.tempo);
+              digitalWrite(res3.led_pin, HIGH);
             }
             
           }

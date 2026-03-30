@@ -1,0 +1,9 @@
+{
+  "additionalFiles": "..\\..\\..,..\\..\\..,..\\..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..,..\\..",
+  "compiler.optimization_flags": "-Os",
+  "customBuildProperties": "",
+  "fqbn": "esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default",
+  "hardwareFolders": "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7,C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7",
+  "otherLibrariesFolders": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\libraries",
+  "sketchLocation": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator"
+}

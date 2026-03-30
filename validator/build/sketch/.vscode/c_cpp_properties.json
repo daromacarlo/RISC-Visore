@@ -1,0 +1,19 @@
+#line 1 "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\.vscode\\c_cpp_properties.json"
+{
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64",
+      "compilerArgs": [
+        ""
+      ]
+    }
+  ],
+  "version": 4
+}

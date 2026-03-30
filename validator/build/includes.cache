@@ -1,0 +1,926 @@
+[
+  {
+    "added_include_path": "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32"
+  },
+  {
+    "added_include_path": "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3"
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\validator.ino.cpp",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\validator.ino.cpp.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\validator.ino.cpp.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\validator.ino.cpp",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controlli_statici.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controlli_statici.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controlli_statici.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controlli_statici.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_dinamico_loop.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_dinamico_loop.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_dinamico_loop.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_dinamico_loop.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_memoria.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_memoria.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_memoria.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_memoria.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_opcode.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_opcode.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_opcode.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_opcode.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registri_critici.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registri_critici.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registri_critici.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registri_critici.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registro_zero.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registro_zero.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registro_zero.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_registro_zero.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_salti.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_salti.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_salti.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_salti.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_sintassi.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_sintassi.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_sintassi.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_sintassi.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_word_intere.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_word_intere.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_word_intere.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\controllo_word_intere.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\riscv1.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\riscv1.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\riscv1.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\riscv1.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_B.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_B.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_B.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_B.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_I.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_I.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_I.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_I.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_J.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_J.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_J.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_J.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_R.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_R.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_R.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_R.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_S.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_S.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_S.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_S.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_U.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_U.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_U.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\simula_U.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  },
+  {
+    "compile": {
+      "source_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\vuota_registri.S",
+      "object_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\vuota_registri.S.o",
+      "depfile_path": "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\vuota_registri.S.d"
+    },
+    "compile_task": {
+      "args": [
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp-rv32\\2511/bin/riscv32-esp-elf-g++",
+        "-c",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/cpp_flags",
+        "-w",
+        "-Os",
+        "-Werror=return-type",
+        "-w",
+        "-x",
+        "c++",
+        "-E",
+        "-CC",
+        "-DF_CPU=160000000L",
+        "-DARDUINO=10607",
+        "-DARDUINO_ESP32C3_DEV",
+        "-DARDUINO_ARCH_ESP32",
+        "-DARDUINO_BOARD=\"ESP32C3_DEV\"",
+        "-DARDUINO_VARIANT=\"esp32c3\"",
+        "-DARDUINO_PARTITION_default",
+        "-DARDUINO_HOST_OS=\"windows\"",
+        "-DARDUINO_FQBN=\"esp32:esp32:esp32c3:CDCOnBoot=default,FlashMode=qio,FlashFreq=80,PartitionScheme=default\"",
+        "-DESP32=ESP32",
+        "-DCORE_DEBUG_LEVEL=0",
+        "-DARDUINO_USB_MODE=1",
+        "-DARDUINO_USB_CDC_ON_BOOT=0",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/defines",
+        "-IC:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator",
+        "-iprefix",
+        "C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/include/",
+        "@C:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/flags/includes",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\esp32c3-libs\\3.3.7/qio_qspi/include",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\cores\\esp32",
+        "-IC:\\Users\\Carlo Da Roma\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\3.3.7\\variants\\esp32c3",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/build_opt.h",
+        "@C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build/file_opts",
+        "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\build\\sketch\\vuota_registri.S",
+        "-o",
+        "nul"
+      ]
+    }
+  },
+  {
+    "missing_include_h": ""
+  }
+]

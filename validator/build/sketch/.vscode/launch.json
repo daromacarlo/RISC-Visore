@@ -1,0 +1,25 @@
+#line 1 "C:\\Users\\Carlo Da Roma\\Documents\\Arduino\\validator\\.vscode\\launch.json"
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "c:/Users/Carlo Da Roma/Documents/Arduino/validator",
+      "program": "c:/Users/Carlo Da Roma/Documents/Arduino/validator/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}

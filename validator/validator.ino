@@ -1,6 +1,15 @@
+// Definiamo una struttura per contenere i due valori di ritorno
+struct RiscvResult {
+  int tempo;   // Tempo di accensione in millisecondi (x)
+  int led_pin; // Numero del pin del LED (y)
+};
+
 extern "C" {
   int controlli_statici(const char* inizio, const char* fine); 
   int controllo_dinamico_loop(const char* inizio, const char* fine);
+  
+  // Modifichiamo la firma per restituire la struttura
+  RiscvResult riscvprg();
 }
 
 #define MAX_BUFFER_SIZE 1000 
@@ -19,7 +28,6 @@ void setup() {
   digitalWrite(LED_LOOP_PIN, HIGH); 
   Serial.println("Sistema pronto");
 }
-
 
 void trasmettiLoopMorse() {
   // L: .-..  O: ---  O: ---  P: .--.
@@ -74,21 +82,35 @@ void loop() {
         Serial.print(bufferIndex);
         Serial.println(" caratteri.");
 
-        /*Serial.println(inputBuffer);
-        Serial.println(inputBuffer + bufferIndex);*/
-
         int res = controlli_statici(inputBuffer, inputBuffer + bufferIndex);
-
-        /*Serial.println(inputBuffer);
-        Serial.println(inputBuffer + bufferIndex);*/
 
         if (res == 0) {
           Serial.println("Controlli statici superati");
           int res2 = controllo_dinamico_loop(inputBuffer, inputBuffer + bufferIndex);
           
           if (res2 == 0) {
-            Serial.println("Codice funzionate");
-            Serial.println("RIAVVIA MANUALMENTE LA SCHEDA.");
+            Serial.println("Codice funzionante");
+            Serial.println("avvio codice.");
+            
+            // Chiamata alla funzione assembly che ritorna la struttura
+            RiscvResult res3 = riscvprg();
+            
+            Serial.print("Tempo ricevuto: ");
+            Serial.print(res3.tempo);
+            Serial.print(" ms, LED scelto: Pin ");
+            Serial.println(res3.led_pin);
+            
+            // Assicuriamoci che il tempo sia positivo e il pin sia valido
+            if (res3.tempo > 0 && res3.led_pin >= 0) {
+              // Impostiamo il pin ritornato da RISC-V come OUTPUT
+              pinMode(res3.led_pin, OUTPUT); 
+              
+              // Accendiamo il led y per x tempo
+              digitalWrite(res3.led_pin, HIGH);
+              delay(res3.tempo);
+              digitalWrite(res3.led_pin, LOW);
+            }
+            
           }
           else {
             Serial.println("Errore dinamico rilevato: Segnalazione su LED 10");

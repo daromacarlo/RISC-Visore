@@ -93,7 +93,7 @@ void loop() {
             Serial.println("avvio codice.");
             
             // Chiamata alla funzione assembly che ritorna la struttura
-            RiscvResult res3 = riscvprg();
+          RiscvResult res3 = riscvprg();
             
             Serial.print("Tempo ricevuto: ");
             Serial.print(res3.tempo);
@@ -110,7 +110,7 @@ void loop() {
               delay(res3.tempo);
               digitalWrite(res3.led_pin, HIGH);
             }
-            
+          
           }
           else {
             Serial.println("Errore dinamico rilevato: Segnalazione su LED 10");

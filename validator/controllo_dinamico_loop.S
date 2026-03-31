@@ -1,10 +1,12 @@
 #include <soc/gpio_reg.h>
 .globl controllo_dinamico_loop, ok
 .data
-
+    .align 4
     CONTAPASSI:    .word 0
     MAXPASSI:      .word 4096
+    .align 4
     REGISTRI_VIRTUALI: .space 128 
+    .align 4
     MEMORIA_VIRTUALE: .space 4096 
 
 .text

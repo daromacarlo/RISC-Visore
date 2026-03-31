@@ -10,7 +10,7 @@
 
 # Svolgimento
 
-.globl riscvprg
+.globl main
 
 .data
 matrice:    .word 1, 3, 3
@@ -20,7 +20,7 @@ matrice:    .word 1, 3, 3
 dim:        .word 9  # non serve
 
 .text
-riscvprg:
+main:
     la t0, matrice
     li t1, 9
     li t2, 0

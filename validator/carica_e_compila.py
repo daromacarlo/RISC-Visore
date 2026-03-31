@@ -17,7 +17,7 @@ def apri_in_editor(file_path):
     """Apre il file con l'editor di testo predefinito (Blocco Note su Windows)."""
     try:
         if os.name == 'nt':  # Windows
-            subprocess.run(['notepad.exe', file_path])
+            subprocess.run(['code', file_path])
         else:  # macOS / Linux
             subprocess.run(['xdg-open', file_path])
     except Exception as e:
@@ -253,10 +253,12 @@ class RiscVMultiTool:
                     righe = f.readlines()
                     # Conversione Endianness per il formato HexText di RARS
                     data = "".join([r.strip()[6:8]+r.strip()[4:6]+r.strip()[2:4]+r.strip()[0:2] for r in righe if len(r.strip())==8])
+                    final_payload = "ASM:" + data
                 else:
                     data = f.read().hex()
+                    final_payload = "HEX:" + data
 
-            ser.write(data.encode('utf-8') + b'\n')
+            ser.write(final_payload.encode('utf-8') + b'\n')
             log_widget.insert(tk.END, "Dati inviati. In attesa di risposta dall'ESP32...\n")
             
             start = time.time()

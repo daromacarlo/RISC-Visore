@@ -118,7 +118,7 @@ def compile_logic(asm_file_path, log_widget):
 class RiscVMultiTool:
     def __init__(self, root):
         self.root = root
-        self.root.title("RISC-V Unified Tool")
+        self.root.title("RISC-Visore")
         self.root.geometry("650x650")
         
         self.container = tk.Frame(self.root)
@@ -132,7 +132,7 @@ class RiscVMultiTool:
 
     def show_launcher(self):
         self.clear_frame()
-        tk.Label(self.container, text="RISC-V TOOLCHAIN", font=('Arial', 16, 'bold')).pack(pady=40)
+        tk.Label(self.container, text="RISC-Visore", font=('Arial', 16, 'bold')).pack(pady=40)
         
         btn_style = {"width": 25, "font": ('Arial', 10), "pady": 10}
         tk.Button(self.container, text="MODALITÀ ASSEMBLY (.asm)\nCompila + Invia", 
@@ -146,7 +146,7 @@ class RiscVMultiTool:
         self.asm_path = None
         
         tk.Button(self.container, text="⬅ Torna al Menu", command=self.show_launcher).pack(anchor="w", padx=10, pady=5)
-        tk.Label(self.container, text="Sviluppo Assembly", font=('Arial', 12, 'bold')).pack()
+        tk.Label(self.container, text="Caricamento codice Assembly", font=('Arial', 12, 'bold')).pack()
 
         self.btn_select = tk.Button(self.container, text="1. SELEZIONA FILE .ASM", command=self.seleziona_asm)
         self.btn_select.pack(pady=5)
@@ -242,11 +242,6 @@ class RiscVMultiTool:
                         ready = True
                         break
             
-            if not ready:
-                log_widget.insert(tk.END, "Avviso: Nessun segnale di 'READY' ricevuto. Invio forzato...\n")
-            else:
-                log_widget.insert(tk.END, "Segnale 'READY' ricevuto! Preparazione dati...\n")
-            # ------------------------------
             
             with open(file_path, 'r' if is_asm_output else 'rb') as f:
                 if is_asm_output:

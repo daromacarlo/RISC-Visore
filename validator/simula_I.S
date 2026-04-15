@@ -59,24 +59,24 @@ simula_I:
     
       # Confronti con func3
         vai_simula_ALGI:
-        	beq t3,zero, ADDI   # ADD, LOADBYTE (func3=0)
-        	li s9, 1
-		beq t3, s9, SLLI   # SLLI (funct3=1)
-		li s9, 2
-		beq t3, s9, SLTI    # SLTI (funct3=2)
-		li t5, 3
-		beq t3, s9, SLTIU    # SLTIU (funct3=3)
-		li t5, 4
-		beq t3, s9, XORI    # XORI (funct3=4)
-		li s9, 5
-		beq t3, s9, SRLI_SRAI    # SRLI/SRAI (funct3=5)
-		li t5, 6
-		beq t3, s9, ORI    # ORI (funct3=6)
-		li t5, 7
-		beq t3, s9, ANDI    # ANDI (funct3=7)
-		jr ra
+        beq t3,zero, ADDI   # ADD, LOADBYTE (func3=0)
+        li s9, 1
+				beq t3, s9, SLLI   # SLLI (funct3=1)
+				li s9, 2
+				beq t3, s9, SLTI    # SLTI (funct3=2)
+				li t5, 3
+				beq t3, s9, SLTIU    # SLTIU (funct3=3)
+				li t5, 4
+				beq t3, s9, XORI    # XORI (funct3=4)
+				li s9, 5
+				beq t3, s9, SRLI_SRAI    # SRLI/SRAI (funct3=5)
+				li t5, 6
+				beq t3, s9, ORI    # ORI (funct3=6)
+				li t5, 7
+				beq t3, s9, ANDI    # ANDI (funct3=7)
+				jr ra
         	
-        	ADDI:
+    ADDI:
 	 	add a6,a3,t5
 		slli t4, t4, 2
 		add s7, t4, a5     
@@ -88,63 +88,63 @@ simula_I:
 		j vai_avanti_con_pc
 		SLLI_REAL: 
 		andi t5, t5, 31       
-   		sll a6, a3, t5	
+   	sll a6, a3, t5	
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)         
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	
 		SLTI:                           
 		slt  a6, a3, t5     
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)           
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	
-	        SLTIU:                          
-	        sltu a6, a3, t5          
+	  SLTIU:                          
+	  sltu a6, a3, t5          
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)           
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	
-	        XORI:
-	        xor a6, a3, t5             
+	  XORI:
+	  xor a6, a3, t5             
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)         
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 
-       SRLI_SRAI:
-       		andi t5,t5, 31
-	        bgt t3, zero, SRAI          
-	        SRLI:
-	        srl a6, a3, t5             
+    SRLI_SRAI:
+    andi t5,t5, 31
+	  bgt t3, zero, SRAI          
+	  SRLI:
+	  srl a6, a3, t5             
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)          
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	        
-	        SRAI:
-	        sra a6, a3, t5            
+	  SRAI:
+	  sra a6, a3, t5            
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)         
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	
-	        ORI:
-	        or a6, a3, t5             
+	  ORI:
+	  or a6, a3, t5             
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)      
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
 	
-	        ANDI:
-	        and a6, a3, t5           
+	  ANDI:
+	  and a6, a3, t5           
 		slli t4, t4, 2
 		add s7, t4, a5     
 		sw a6, 0(s7)      
-	        j vai_avanti_con_pc
+	  j vai_avanti_con_pc
         
 #--------------------------------------------------------------------------------------------------------------        
 # """"""""funzioni"""""""" "algi" scritte di fretta, sono da ricontrollare, potrbbero contenere errori e orrori   
@@ -221,20 +221,20 @@ simula_I:
 	    add s2, a3, t5     # PC = rs1 + imm
 	    
 	    
-   	    jr ra		
+   	  jr ra		
 
 #------------------------------------------------------------------------	
 
 	vai_simula_SYST:
 	
-	    li s9, 0x1 
-	    beq t5,zero, BREAK 
-            li s9, 0x0
-	    beq t5, s9, CALL   
+	  li s9, 0x1 
+	  beq t5,zero, BREAK 
+    li s9, 0x0
+	  beq t5, s9, CALL   
 	   
-	    BREAK:
+	  BREAK:
 		j ok # Programma finisce, non ha loop
-	    CALL:
+	  CALL:
  		j vai_avanti_con_pc
 	
 vai_avanti_con_pc:

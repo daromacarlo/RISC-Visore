@@ -1,6 +1,6 @@
 #include <soc/gpio_reg.h>
 
-# IL PROGRAMMA SIMULA LE SEGUENTI:
+# IL PROGRAMMA SIMULA LE SEGUENTI OPERAZIONI:
 
 #-----------------------------------------------------------#
 # sb Store Byte S 0100011 0x0 M[rs1+imm][0:7] = rs2[0:7]    

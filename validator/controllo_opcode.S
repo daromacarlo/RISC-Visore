@@ -73,3 +73,4 @@ errore:
 ok:
     li a0, 0                # Opcode valido 
     jr ra
+    

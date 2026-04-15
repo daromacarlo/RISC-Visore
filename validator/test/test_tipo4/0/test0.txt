@@ -1,0 +1,7 @@
+.globl main
+
+.text
+
+	main:
+	li a0, 6000
+	li a1,10

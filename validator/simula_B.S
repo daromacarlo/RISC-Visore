@@ -109,5 +109,5 @@ vai_avanti_con_pc:
 esegui_salto:
     li s11,2
     mul t4, t4, s11
-    add s2, s2, t4          # nuovo PC (simuato) = PC (simulato) + immediato
+    add s2, s2, t4          # nuovo PC (simulato) = PC (simulato) + immediato
     jr ra

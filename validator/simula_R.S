@@ -1,6 +1,6 @@
 #include <soc/gpio_reg.h>
 
-# IL PROGRAMMA SIMULA LE SEGUENTI:
+# IL PROGRAMMA SIMULA LE SEGUENTI OPERAZIONI:
 
 #-----------------------------------------------------------------------------#
 # add ADD R 0110011 0x0 0x00 rd = rs1 + rs2                                   

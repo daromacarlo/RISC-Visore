@@ -1,12 +1,11 @@
 #include <soc/gpio_reg.h>
 
-# IL PROGRAMMA SIMULA LE SEGUENTI:
-
+# IL PROGRAMMA SIMULA LE SEGUENTI OPERAZIONI:
 #-----------------------------------------------------------------------------#
 # lui   Load Upper Imm      U 0110111   rd = imm << 12
 # auipc Add Upper Imm to PC U 0010111   rd = PC_simulato + (imm << 12)
 #-----------------------------------------------------------------------------#
-
+# imm[31:12] | rd | opcode   (U-type)
 .globl simula_U
 
 .text

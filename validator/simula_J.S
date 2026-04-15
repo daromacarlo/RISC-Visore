@@ -1,6 +1,6 @@
 #include <soc/gpio_reg.h>
 
-# IL PROGRAMMA SIMULA LE SEGUENTI:
+# IL PROGRAMMA SIMULA LE SEGUENTI OPERAZIONI:
 
 #-----------------------------------------------------------------------------#
 # jal Jump And Link J 1101111 rd = PC+4; PC += imm

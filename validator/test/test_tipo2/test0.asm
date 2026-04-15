@@ -1,10 +1,9 @@
 #------------------------------------------------------------------------------------
 #
 # TRACCIA 1.
-# Scrivi un programma in assembly RISC-V che dato un vetore di word (numeri) faccia
-# accendere il led x della ESP per y + 1000ms tempo, dove x è il massimo valore
-# nel vettore di word mentre y è il valore minimo nel vettore di word. 
-# vettore:    .word 15, 20, 42, 90, 88, 10, 40
+# Modifica la sezione .data del seguente programma in assembly RISC-V in modo tale 
+# che venga acceso il led 8 della ESP per 1005ms. NON PUOI MODIFICARE IL .text e il vettore 
+# rimanere della stessa lunghezza.
 #
 #------------------------------------------------------------------------------------
 
@@ -30,7 +29,7 @@ main:
     addi t1, t1, -1     
 
 loop:
-    blez t1, fine  
+    blez t1, END 
     
     lw t2, 0(t0)       
     
@@ -46,7 +45,7 @@ check_min:
 skip_update:
     addi t0, t0, 4
     addi t1, t1, -1
-    j loop                  # Ripeti il ciclo
+    j loop                 
 
-fine:
+END:
     addi a0, a0, 1000

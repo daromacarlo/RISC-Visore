@@ -129,7 +129,7 @@ ciclo_simulazione:
       beq s10, s11, vai_simula_U 
       li s11, 23
       beq s10, s11, vai_simula_U 
-      j esci   # in teoria � impossibile che si arrivi a questa parte del codice vista la strutura del mio codice 
+      j esci   # in teoria è impossibile che si arrivi a questa parte del codice vista la strutura del mio codice 
 
 vai_simula_B:
 	jal ra, simula_B

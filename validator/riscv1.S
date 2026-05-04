@@ -15,3 +15,7 @@
 	riscvprg:
 	li a0, 6000
 	li a1,10
+	x:
+	j x
+	y:
+	j y

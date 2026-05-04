@@ -13,9 +13,9 @@
 .globl main
 
 .data
-matrice:    .word 1, 3, 3
-            .word 4, 8, 15
-            .word 5, 2, 11
+matrice:    .word 10, 30, 30
+            .word 40, 80, 150
+            .word 50, 20, 110
 
 dim:        .word 9  # non serve
 
